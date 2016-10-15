@@ -1,13 +1,16 @@
 package by.vonotirah.mm_gc;
 
-/**
- * Hello world!
- *
- */
-public class App 
-{
-    public static void main( String[] args )
-    {
-        System.out.println( "Hello World!" );
-    }
+public class App {
+	public static void main(String[] args) {
+
+		Service4Example changeClass = new Service4Example();
+		Class4Example firstClass = new Class4Example("This is first class message");
+
+		firstClass.say();
+
+		changeClass.passByRefExample(firstClass);
+
+		firstClass.say();
+
+	}
 }
