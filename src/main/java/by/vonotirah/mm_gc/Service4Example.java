@@ -11,4 +11,8 @@ public class Service4Example {
 		clazz.setMessage("This message was chaged in method");
 		clazz.say();
 	}
+
+	public void passByRefPrimType(int x) {
+		x--;
+	}
 }

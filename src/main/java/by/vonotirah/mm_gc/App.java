@@ -13,5 +13,14 @@ public class App {
 		changeClass.passByRefChangeObjExample(firstClass);
 		firstClass.say();
 
+		int x = 0;
+		int y = x;
+		System.out.println("x = " + x + ", y = " + y);
+		x++;
+		System.out.println("x = " + x + ", y = " + y);
+		y = 9;
+		System.out.println("x = " + x + ", y = " + y);
+		changeClass.passByRefPrimType(x);
+		System.out.println("x = " + x + ", y = " + y);
 	}
 }
