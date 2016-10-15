@@ -7,9 +7,10 @@ public class App {
 		Class4Example firstClass = new Class4Example("This is first class message");
 
 		firstClass.say();
+		changeClass.passByRefNewObjExample(firstClass);
+		firstClass.say();
 
-		changeClass.passByRefExample(firstClass);
-
+		changeClass.passByRefChangeObjExample(firstClass);
 		firstClass.say();
 
 	}
